@@ -1680,7 +1680,7 @@ void MainWindow::on_actionChip_info_triggered()
 void MainWindow::progInit()
 {
     int index2;
-	QString datFileNameRoot = "./IMSProg.Dat";
+    QString datFileNameRoot = "./IMSProg.Dat";
     QString datFileNameMain = QDir::homePath() + "/.local/share/imsprog/IMSProg.Dat";
     QString datFileNameReserve = "/usr/share/imsprog/IMSProg.Dat";
     QString currentDatFilePath = "";

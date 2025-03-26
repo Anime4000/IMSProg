@@ -1516,7 +1516,11 @@ void MainWindow::on_actionChecksum_calculate_triggered()
 
 void MainWindow::on_actionEdit_chips_Database_triggered()
 {
+#ifdef _WIN32
+    QString programPath = "./IMSProg_editor.exe";
+#else
     QString programPath = "./IMSProg_editor";
+#endif
     bool programExists = QFileInfo::exists(programPath) && !QDir(programPath).exists();
 
     if (!programExists)
@@ -1676,6 +1680,7 @@ void MainWindow::on_actionChip_info_triggered()
 void MainWindow::progInit()
 {
     int index2;
+	QString datFileNameRoot = "./IMSProg.Dat";
     QString datFileNameMain = QDir::homePath() + "/.local/share/imsprog/IMSProg.Dat";
     QString datFileNameReserve = "/usr/share/imsprog/IMSProg.Dat";
     QString currentDatFilePath = "";
@@ -1683,7 +1688,8 @@ void MainWindow::progInit()
     ui->statusBar->showMessage(tr("Opening DAT file"));
 
     if (QFileInfo(datFileNameMain).exists()) currentDatFilePath = datFileNameMain;
-    else if (QFileInfo(datFileNameReserve).exists()) currentDatFilePath = datFileNameReserve;
+    else if (QFileInfo(datFileNameRoot).exists()) currentDatFilePath = datFileNameRoot;
+	else if (QFileInfo(datFileNameReserve).exists()) currentDatFilePath = datFileNameReserve;
 
     QFile datfile(currentDatFilePath);
     QByteArray dataChips;

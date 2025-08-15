@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="uk_UA">
+<TS version="2.1" language="zh_TW" sourcelanguage="en">
 <context>
     <name>DialogAbout</name>
     <message>
         <location filename="../dialogabout.ui" line="14"/>
         <source>About IMSProg</source>
-        <translation>Про програму IMSProg</translation>
+        <translation>關於 IMSProg</translation>
     </message>
     <message>
         <source>IMSProg - free software I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices. IMSProg supports 24Cxx, 25xx, 93Cxx, and M95xx series chips.</source>
-        <translation type="vanished">IMSProg - це програма для CH341a, що вільно розповсюджується, підтримує мікросхеми типів I2C, SPI NOR Flash і MicroWire. IMSProg підтримує роботу з 24Cxx, 25xxx, 93Cxx, M95xxx серіями мікросхем.</translation>
+        <translation type="vanished">IMSProg - I2C、SPI、MicroWire EEPROM/Flash 晶片 CH341A 程式燒錄器免費軟體。IMSProg 支援 24Cxx、25xx、93Cxx 和 M95xx 系列晶片。</translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="70"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In this program &lt;a href=&quot;https://github.com/Simsys/qhexedit2/&quot;&gt;QhexEditor2&lt;/a&gt; widget and modified programmer &lt;a href=&quot;https://github.com/McMCCRU/SNANDer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;SNANDer&lt;/span&gt;&lt;/a&gt; were used.&lt;/p&gt;&lt;p&gt;The page on GitHub is &lt;a href=&quot;https://github.com/bigbigmdm/IMSProg&quot;&gt;here&lt;/a&gt;, the support page is &lt;a href=&quot;https://antenna-dvb-t2.ru/IMSProg.php&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;У цій програмі використовується віджет &lt;a href=&quot;https://github.com/Simsys/qhexedit2/&quot;&gt;QhexEditor2&lt;/a&gt; та модифікований код програми &lt;a href=&quot;https://github.com/McMCCRU/SNANDer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;SNANDer&lt;/span&gt;&lt;/a&gt; .&lt;/p&gt;&lt;p&gt;Сторінка на GitHub знаходиться &lt;a href=&quot;https://github.com/bigbigmdm/IMSProg&quot;&gt;тут&lt;/a&gt;, сторінка підтримки - &lt;a href=&quot;https://antenna-dvb-t2.ru/IMSProg.php&quot;&gt;тут&lt;/a&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;本程式使用 &lt;a href=&quot;https://github.com/Simsys/qhexedit2/&quot;&gt;QhexEditor2&lt;/a&gt; 元件和經過修改的程式燒錄器 &lt;a href=&quot;https://github.com/McMCCRU/SNANDer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;SNANDer&lt;/span&gt;&lt;/a&gt; 。&lt;/p&gt;&lt;p&gt;GitHub 頁面在 &lt;a href=&quot;https://github.com/bigbigmdm/IMSProg&quot;&gt;這裡&lt;/a&gt;, 支援頁面在 &lt;a href=&quot;https://antenna-dvb-t2.ru/IMSProg.php&quot;&gt;這裡&lt;/a&gt;。 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="120"/>
         <source>Version: </source>
-        <translation>Версія: </translation>
+        <translation>版本： </translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="130"/>
@@ -30,22 +30,22 @@
     <message>
         <location filename="../dialogabout.ui" line="48"/>
         <source>OR</source>
-        <translation>або</translation>
+        <translation>或</translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="26"/>
         <source>IMSProg - free software I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices. IMSProg supports 24Cxx, 25xx, 93Cxx, AT45DBxx and M95xx series chips.</source>
-        <translation>IMSProg - це програма для CH341a, що вільно розповсюджується, підтримує мікросхеми типів I2C, SPI NOR Flash і MicroWire. IMSProg підтримує роботу з 24Cxx, 25xxx, 93Cxx, AT45DBxx, M95xxx серіями мікросхем.</translation>
+        <translation>IMSProg - I2C、SPI、MicroWire EEPROM/Flash 晶片 CH341A 程式燒錄器免費軟體。IMSProg 支援 24Cxx、25xx、93Cxx, AT45DBxx 和 M95xx 系列晶片。</translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="99"/>
         <source>Written by 2023 Mikhail Medvedev</source>
-        <translation>Створено у 2023 році Михайлом Медведєвим</translation>
+        <translation>作者：2023 米哈伊爾·梅德韋傑夫</translation>
     </message>
     <message>
         <location filename="../dialogabout.ui" line="169"/>
         <source>Close</source>
-        <translation>Закрити</translation>
+        <translation>關閉</translation>
     </message>
 </context>
 <context>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../dialogcompare.ui" line="14"/>
         <source>Comparing files:</source>
-        <translation>Порівняння файлів:</translation>
+        <translation>比較檔案：</translation>
     </message>
     <message>
         <location filename="../dialogcompare.ui" line="68"/>
@@ -64,7 +64,7 @@
         <location filename="../dialogcompare.ui" line="100"/>
         <location filename="../dialogcompare.ui" line="187"/>
         <source>Name</source>
-        <translation>Назв.</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../dialogcompare.ui" line="155"/>
@@ -74,13 +74,13 @@
     <message>
         <location filename="../dialogcompare.ui" line="201"/>
         <source>Visible ASCII areas</source>
-        <translation>Показати ASCII області</translation>
+        <translation>顯示 ASCII 區域</translation>
     </message>
     <message>
         <location filename="../dialogcompare.cpp" line="108"/>
         <location filename="../dialogcompare.cpp" line="109"/>
         <source>Name: </source>
-        <translation>Назв.:</translation>
+        <translation>名稱：</translation>
     </message>
 </context>
 <context>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../dialoginfo.ui" line="14"/>
         <source>Connection info:</source>
-        <translation>Інформ. про підключення:</translation>
+        <translation>連接資訊：</translation>
     </message>
     <message>
         <location filename="../dialoginfo.ui" line="36"/>
         <source>Slot:</source>
-        <translation>Слот:</translation>
+        <translation>插槽：</translation>
     </message>
     <message>
         <location filename="../dialoginfo.ui" line="43"/>
@@ -104,12 +104,12 @@
     <message>
         <location filename="../dialoginfo.ui" line="54"/>
         <source>Adapter:</source>
-        <translation>Адаптер:</translation>
+        <translation>轉接器：</translation>
     </message>
     <message>
         <location filename="../dialoginfo.ui" line="106"/>
         <source>Close</source>
-        <translation>Закрити</translation>
+        <translation>關閉</translation>
     </message>
 </context>
 <context>
@@ -117,12 +117,12 @@
     <message>
         <location filename="../dialognandsr.ui" line="20"/>
         <source>Status registers</source>
-        <translation>Регістри статусу</translation>
+        <translation>狀態暫存器</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="37"/>
         <source>Status register 1</source>
-        <translation>Регістр статусу 1</translation>
+        <translation>狀態暫存器 1</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="318"/>
@@ -167,7 +167,7 @@
     <message>
         <location filename="../dialognandsr.ui" line="552"/>
         <source>Status register 2</source>
-        <translation>Регістр статусу 2</translation>
+        <translation>狀態暫存器 2</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="824"/>
@@ -205,7 +205,7 @@
     <message>
         <location filename="../dialognandsr.ui" line="1040"/>
         <source>Status register 3</source>
-        <translation>Регістр статусу 3</translation>
+        <translation>狀態暫存器 3</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="1337"/>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../dialognandsr.ui" line="1522"/>
         <source>Status register 4</source>
-        <translation>Регістр статусу 4</translation>
+        <translation>狀態暫存器 4</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="1785"/>
@@ -270,67 +270,67 @@
     <message>
         <location filename="../dialognandsr.ui" line="1998"/>
         <source>Status register 5</source>
-        <translation>Регістр статусу 5</translation>
+        <translation>狀態暫存器 5</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2482"/>
         <source>Unique ID:</source>
-        <translation>ID мікросхеми:</translation>
+        <translation>唯一 ID：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2538"/>
         <source>Read</source>
-        <translation>Прочитати</translation>
+        <translation>讀取</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2564"/>
         <source>Write</source>
-        <translation>Записати</translation>
+        <translation>寫入</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2580"/>
         <source>Parameter page:</source>
-        <translation>Сторінка параметрів:</translation>
+        <translation>參數頁：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2608"/>
         <source>Manufacturer:</source>
-        <translation>Виробник:</translation>
+        <translation>製造商：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2618"/>
         <source>Model:</source>
-        <translation>Модель:</translation>
+        <translation>型號：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2628"/>
         <source>Page size:</source>
-        <translation>Розмір листа:</translation>
+        <translation>頁面大小:</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2635"/>
         <source>ECC size:</source>
-        <translation>Розмір ECC:</translation>
+        <translation>ECC 大小:</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2648"/>
         <source>Pages per block:</source>
-        <translation>Сторінок у блоці:</translation>
+        <translation>每個區塊的頁數：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2655"/>
         <source>Block per unit:</source>
-        <translation>Блок на одиницю:</translation>
+        <translation>每單位的區塊：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2662"/>
         <source>Block size:</source>
-        <translation>Розмір блоку:</translation>
+        <translation>區塊大小：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.ui" line="2678"/>
         <source>Chip size:</source>
-        <translation>Обсяг МС:</translation>
+        <translation>晶片大小：</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="100"/>
@@ -339,33 +339,33 @@
         <location filename="../dialognandsr.cpp" line="294"/>
         <location filename="../dialognandsr.cpp" line="351"/>
         <source>Error</source>
-        <translation>Помилка</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="100"/>
         <source>Error reading register!</source>
-        <translation>Помилка читання регістру!</translation>
+        <translation>讀取暫存器錯誤！</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="168"/>
         <source>Error reading Parameter Page!</source>
-        <translation>Помилка під час читання сторінки параметрів!</translation>
+        <translation>錯誤讀取參數頁面!</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="229"/>
         <source>The Parameter Page is not supported.</source>
-        <translation>Сторінка параметрів не підтримується.</translation>
+        <translation>不支援參數頁。</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="247"/>
         <source>Error reading ID!</source>
-        <translation>Помилка під час зчитування ідентифікатора!</translation>
+        <translation>錯誤讀取 ID！</translation>
     </message>
     <message>
         <location filename="../dialognandsr.cpp" line="294"/>
         <location filename="../dialognandsr.cpp" line="351"/>
         <source>Programmer CH341a is not connected!</source>
-        <translation>Програматор CH341a не підключений!</translation>
+        <translation>CH341A 程式燒錄器未連接！</translation>
     </message>
 </context>
 <context>
@@ -373,22 +373,22 @@
     <message>
         <location filename="../dialogrp.ui" line="20"/>
         <source>Load block from file</source>
-        <translation>Завантажити блок із файлу</translation>
+        <translation>從檔案中載入資料區塊</translation>
     </message>
     <message>
         <location filename="../dialogrp.ui" line="33"/>
         <source>All values in HEX format!</source>
-        <translation>Всі дані шістнадцяткові!</translation>
+        <translation>所有數值均為 HEX 格式！</translation>
     </message>
     <message>
         <location filename="../dialogrp.ui" line="48"/>
         <source>Start address:</source>
-        <translation>Стартова адреса:</translation>
+        <translation>起始位址:</translation>
     </message>
     <message>
         <location filename="../dialogrp.ui" line="112"/>
         <source>Load</source>
-        <translation>Завантажити</translation>
+        <translation>載入</translation>
     </message>
 </context>
 <context>
@@ -396,47 +396,47 @@
     <message>
         <location filename="../dialogsfdp.ui" line="14"/>
         <source>Information about SFDP and status registers</source>
-        <translation>Інформація про SFDP та регістри статусу</translation>
+        <translation>有關 SFDP 和狀態暫存器的資訊</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="47"/>
         <source>SFDP support:</source>
-        <translation>Підтримка SFDP:</translation>
+        <translation>SFDP 支援：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="67"/>
         <source>Minimum VCC:</source>
-        <translation>Мін. VCC:</translation>
+        <translation>最低 VCC：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="87"/>
         <source>Maximum VCC:</source>
-        <translation>Макс. VCC:</translation>
+        <translation>最大 VCC：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="107"/>
         <source>Chip size:</source>
-        <translation>Обсяг МС:</translation>
+        <translation>晶片大小：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="127"/>
         <source>Block size:</source>
-        <translation>Розмір блоку:</translation>
+        <translation>區塊大小：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="150"/>
         <source>Speeds:</source>
-        <translation>Режими:</translation>
+        <translation>速度：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="170"/>
         <source>OTP support:</source>
-        <translation>Підтримка OTP:</translation>
+        <translation>支援 OTP：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="196"/>
         <source>Status Register 0</source>
-        <translation>Регістр статусу 0</translation>
+        <translation>狀態暫存器 0</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="424"/>
@@ -521,47 +521,47 @@
     <message>
         <location filename="../dialogsfdp.ui" line="611"/>
         <source>Status Register 1</source>
-        <translation>Регістр статусу 1</translation>
+        <translation>狀態暫存器 1</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1017"/>
         <source>Status register 2</source>
-        <translation>Регістр статусу 2</translation>
+        <translation>狀態暫存器 2</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1195"/>
         <source>JEDEC info:</source>
-        <translation>JEDEC інформ.:</translation>
+        <translation>JEDEC 資訊：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1301"/>
         <source>Man. ID</source>
-        <translation>ID вироб</translation>
+        <translation>製造商識別碼：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1323"/>
         <source>Man. type</source>
-        <translation>Тип вироб</translation>
+        <translation>製造類型：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1345"/>
         <source>Capacity</source>
-        <translation>Об `єм</translation>
+        <translation>容量：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1357"/>
         <source>Unique ID:</source>
-        <translation>ID мікросхеми:</translation>
+        <translation>唯一 ID：</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1398"/>
         <source>Read</source>
-        <translation>Прочитати</translation>
+        <translation>讀取</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1426"/>
         <source>Write registers</source>
-        <translation>Напишіть регістри</translation>
+        <translation>寫入暫存器</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1453"/>
@@ -603,12 +603,12 @@
     <message>
         <location filename="../dialogsfdp.ui" line="1731"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Legend:&lt;/p&gt;&lt;p&gt;** - Basic area&lt;br&gt;** - Extended area&lt;br&gt;** - Manufacture area &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Позначення:&lt;/p&gt;&lt;p&gt;** - Основна область&lt;br&gt;** - Додаткова область&lt;br&gt;** - Область виробника &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;圖例:&lt;/p&gt;&lt;p&gt;** - 基本區域&lt;br&gt;** - 擴充區&lt;br&gt;** - 製造商區&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.ui" line="1776"/>
         <source>Close</source>
-        <translation>Закрити</translation>
+        <translation>關閉</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="83"/>
@@ -621,7 +621,7 @@
         <location filename="../dialogsfdp.cpp" line="434"/>
         <location filename="../dialogsfdp.cpp" line="436"/>
         <source>Error</source>
-        <translation>Помилка</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="103"/>
@@ -629,60 +629,59 @@
         <location filename="../dialogsfdp.cpp" line="225"/>
         <location filename="../dialogsfdp.cpp" line="244"/>
         <source>Error reading register!</source>
-        <translation>Помилка читання регістру!</translation>
+        <translation>讀取暫存器錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="175"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; Hex SFDP register data:
 </source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; Дані області SFDP:
-</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; 十六進位 SFDP 暫存器資料:</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="176"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Addr:&lt;br&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Адр.&lt;br&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;位址：&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="436"/>
         <source>Before writing the registers, please press the `Read` button!</source>
-        <translation>Перш ніж записувати реєстри, натисніть кнопку `Прочитати`!</translation>
+        <translation>在寫入暫存器之前，請按`讀取`按鈕！</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="83"/>
         <source>Error reading JEDEC ID!</source>
-        <translation>Помилка читання JEDEC ID!</translation>
+        <translation>讀取 JEDEC ID 時發生錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="43"/>
         <source>Legend:</source>
-        <translation>Позначення:</translation>
+        <translation>圖例:</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="44"/>
         <source> - Basic area</source>
-        <translation> - Основна область</translation>
+        <translation> - 基本區域</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="45"/>
         <source> - Extended area</source>
-        <translation> - Додаткова область</translation>
+        <translation> - 擴充區</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="46"/>
         <source> - Manufacture area</source>
-        <translation> - Область виробника</translation>
+        <translation> - 製造商區</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="266"/>
         <source>Error reading unique ID!</source>
-        <translation>Помилка читання ID мікросхеми!</translation>
+        <translation>讀取唯一 ID 時發生錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsfdp.cpp" line="281"/>
         <location filename="../dialogsfdp.cpp" line="434"/>
         <source>Programmer CH341a is not connected!</source>
-        <translation>Програматор CH341a не підключено!</translation>
+        <translation>CH341A 程式燒錄器未連接！</translation>
     </message>
 </context>
 <context>
@@ -690,32 +689,32 @@
     <message>
         <location filename="../dialogsp.ui" line="14"/>
         <source>Save part of image</source>
-        <translation>Зберегти частину прошивки</translation>
+        <translation>儲存部分映像</translation>
     </message>
     <message>
         <location filename="../dialogsp.ui" line="27"/>
         <source>All values in HEX format!</source>
-        <translation>Всі дані шістнадцяткові!</translation>
+        <translation>所有數值均為 HEX 格式！</translation>
     </message>
     <message>
         <location filename="../dialogsp.ui" line="42"/>
         <source>Start address:</source>
-        <translation>Стартова адреса:</translation>
+        <translation>起始位址:</translation>
     </message>
     <message>
         <location filename="../dialogsp.ui" line="120"/>
         <source>Save</source>
-        <translation>Зберегти</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <location filename="../dialogsp.cpp" line="28"/>
         <source>End address</source>
-        <translation>Кінц. адреса</translation>
+        <translation>結束位址</translation>
     </message>
     <message>
         <location filename="../dialogsp.cpp" line="29"/>
         <source>Length</source>
-        <translation>Довжина</translation>
+        <translation>長度</translation>
     </message>
 </context>
 <context>
@@ -723,7 +722,7 @@
     <message>
         <location filename="../dialogsr.ui" line="14"/>
         <source>Status register</source>
-        <translation>Регістр статусу</translation>
+        <translation>狀態暫存器</translation>
     </message>
     <message>
         <location filename="../dialogsr.ui" line="296"/>
@@ -760,12 +759,12 @@
     <message>
         <location filename="../dialogsr.ui" line="545"/>
         <source>Read</source>
-        <translation>Прочитати</translation>
+        <translation>讀取</translation>
     </message>
     <message>
         <location filename="../dialogsr.ui" line="571"/>
         <source>Write</source>
-        <translation>Записати</translation>
+        <translation>寫入</translation>
     </message>
     <message>
         <location filename="../dialogsr.cpp" line="56"/>
@@ -773,23 +772,23 @@
         <location filename="../dialogsr.cpp" line="109"/>
         <location filename="../dialogsr.cpp" line="112"/>
         <source>Error</source>
-        <translation>Помилка</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../dialogsr.cpp" line="56"/>
         <source>Error reading register!</source>
-        <translation>Помилка читання регістру!</translation>
+        <translation>讀取暫存器錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsr.cpp" line="70"/>
         <location filename="../dialogsr.cpp" line="112"/>
         <source>Programmer CH341a is not connected!</source>
-        <translation>Програматор CH341a не підключено!</translation>
+        <translation>CH341A 程式燒錄器未連接！</translation>
     </message>
     <message>
         <location filename="../dialogsr.cpp" line="109"/>
         <source>Before writing the register, please press the `Read` button!</source>
-        <translation>Перш ніж записувати реєстр, натисніть кнопку `Прочитати`!</translation>
+        <translation>在寫入暫存器之前，請按`讀取`按鈕！</translation>
     </message>
 </context>
 <context>
@@ -797,23 +796,22 @@
     <message>
         <location filename="../dialogsecurity.ui" line="14"/>
         <source>Security registers</source>
-        <translation>Реєстри безпеки</translation>
+        <translation>安全暫存器</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="24"/>
         <source>Hex Editor</source>
-        <translatorcomment>Шістнадцятковий редактор</translatorcomment>
-        <translation>HEX-редактор</translation>
+        <translation>十六進位編輯器</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="64"/>
         <source>Operations:</source>
-        <translation>Операції:</translation>
+        <translation>操作：</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="93"/>
         <source>Reading security register data from the chip</source>
-        <translation>Зчитування даних регістру безпеки з чіпа</translation>
+        <translation>從晶片讀取安全暫存器資料</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="96"/>
@@ -827,27 +825,27 @@
     <message>
         <location filename="../dialogsecurity.ui" line="125"/>
         <source>Erasing security register data</source>
-        <translation>Стирання даних реєстру безпеки</translation>
+        <translation>清除安全暫存器資料</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="157"/>
         <source>Writing data to the security register</source>
-        <translation>Запис даних до реєстру безпеки</translation>
+        <translation>向安全暫存器寫入資料</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="196"/>
         <source>Open a binary file from a computer</source>
-        <translation>Відкрийте двійковий файл з комп&apos;ютера</translation>
+        <translation>從電腦開啟二進位檔案</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="228"/>
         <source>Save the binary file on the computer</source>
-        <translation>Збережіть двійковий файл на комп&apos;ютері</translation>
+        <translation>在電腦上儲存二進位檔案</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.ui" line="257"/>
         <source>Security register number:</source>
-        <translation>Номер реєстру безпеки:</translation>
+        <translation>安全暫存器編號：</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="170"/>
@@ -858,44 +856,44 @@
         <location filename="../dialogsecurity.cpp" line="385"/>
         <location filename="../dialogsecurity.cpp" line="418"/>
         <source>Error</source>
-        <translation>Помилка</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="170"/>
         <source>Error reading register!</source>
-        <translation>Помилка читання регістру!</translation>
+        <translation>讀取暫存器錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="180"/>
         <location filename="../dialogsecurity.cpp" line="291"/>
         <location filename="../dialogsecurity.cpp" line="360"/>
         <source>Programmer CH341a is not connected!</source>
-        <translation>Програматор CH341a не підключено!</translation>
+        <translation>CH341A 程式燒錄器未連接！</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="254"/>
         <source>Error writing register!</source>
-        <translation>Реєстр запису помилок!</translation>
+        <translation>寫入暫存器錯誤！</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="376"/>
         <source>Open file</source>
-        <translation>Відкрити файл</translation>
+        <translation>開啟檔案</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="385"/>
         <source>The file size exceeds the security register size.</source>
-        <translation>Розмір файлу перевищує розмір регістру безпеки.</translation>
+        <translation>檔案大小超過安全暫存器大小。</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="407"/>
         <source>Save file</source>
-        <translation>Зберегти файл</translation>
+        <translation>儲存檔案</translation>
     </message>
     <message>
         <location filename="../dialogsecurity.cpp" line="418"/>
         <source>Error saving file!</source>
-        <translation>Помилка збереження файлу!</translation>
+        <translation>儲存檔案時發生錯誤！</translation>
     </message>
 </context>
 <context>
@@ -903,22 +901,22 @@
     <message>
         <location filename="../dialogsetaddr.ui" line="14"/>
         <source>Goto address</source>
-        <translation>Перейти до адреси</translation>
+        <translation>前往位址</translation>
     </message>
     <message>
         <location filename="../dialogsetaddr.ui" line="24"/>
         <source>All values in HEX format!</source>
-        <translation>Всі дані шістнадцяткові!</translation>
+        <translation>所有數值均為 HEX 格式！</translation>
     </message>
     <message>
         <location filename="../dialogsetaddr.ui" line="39"/>
         <source>Address:</source>
-        <translation>Адреса:</translation>
+        <translation>位址:</translation>
     </message>
     <message>
         <location filename="../dialogsetaddr.ui" line="90"/>
         <source>Go to</source>
-        <translation>Перейдіть до</translation>
+        <translation>前往</translation>
     </message>
 </context>
 <context>
@@ -926,12 +924,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1006"/>
         <source>File</source>
-        <translation>Файл</translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1102"/>
         <source>Open</source>
-        <translation>Відкрити</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1105"/>
@@ -941,7 +939,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Exit</source>
-        <translation>Вихід</translation>
+        <translation>離開</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1129"/>
@@ -951,54 +949,54 @@
     <message>
         <location filename="../mainwindow.ui" line="1114"/>
         <source>Save</source>
-        <translation>Зберегти</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="29"/>
         <source>IMSProg - I2C/MicroWire/SPI CH341a Programmer</source>
-        <translation>IMSProg - I2C/MicroWire/SPI програматор для CH341a</translation>
+        <translation>IMSProg - I2C/MicroWire/SPI CH341a 程式燒錄器</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="77"/>
         <source>Chip</source>
-        <translation>Мікросхема</translation>
+        <translation>晶片</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Name</source>
-        <translation>Назва</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="247"/>
         <source>Page size</source>
-        <translation>Розмір листа</translation>
+        <translation>頁面大小</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="285"/>
         <source>Block size</source>
-        <translation>Розмір блока</translation>
+        <translation>區塊大小</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>VCC, Volt</source>
-        <translation>Живлення, В</translation>
+        <translation>VCC(伏)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="423"/>
         <source>4byte Addr.</source>
-        <translation>4byte адреса.</translation>
+        <translation>4 位元組位址</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="572"/>
         <location filename="../mainwindow.ui" line="1138"/>
         <source>Detect</source>
-        <translation>Пошук</translation>
+        <translation>偵測</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="609"/>
         <location filename="../mainwindow.ui" line="1150"/>
         <source>Read</source>
-        <translation>Прочитати</translation>
+        <translation>讀取</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="411"/>
@@ -1008,59 +1006,59 @@
     <message>
         <location filename="../mainwindow.ui" line="461"/>
         <source>I2C bus speed</source>
-        <translation>Швидк. шини I2C</translation>
+        <translation>I2C 匯流排速度</translation>
     </message>
     <message>
         <source>Erase size</source>
-        <translation type="vanished">Розмір стирання</translation>
+        <translation type="vanished">擦除大小</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="496"/>
         <source>ECC size</source>
-        <translation>Розмір ECC</translation>
+        <translation>ECC 大小</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Auto Options</source>
-        <translation>Авто опції</translation>
+        <translation>自動選項</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="664"/>
         <location filename="../mainwindow.ui" line="1162"/>
         <source>Erase</source>
-        <translation>Стерти</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="674"/>
         <source>Program</source>
-        <translation>Записати</translation>
+        <translation>程式</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="684"/>
         <location filename="../mainwindow.ui" line="1186"/>
         <source>Verify</source>
-        <translation>Перевірити</translation>
+        <translation>驗證</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="739"/>
         <source>Go!</source>
-        <translation>Старт!</translation>
+        <translation>開始！</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <location filename="../mainwindow.ui" line="1037"/>
         <source>Hex Editor</source>
-        <translation>HEX-редактор</translation>
+        <translation>十六進位編輯器</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="846"/>
         <source>  JEDEC ID:</source>
-        <translation>  JEDEC ID:</translation>
+        <translation>JEDEC ID:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="862"/>
         <source>CH341a:</source>
-        <translation>CH341a:</translation>
+        <translation>CH341A:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="893"/>
@@ -1075,17 +1073,17 @@
     <message>
         <location filename="../mainwindow.ui" line="965"/>
         <source>Message</source>
-        <translation>Повідомлення</translation>
+        <translation>訊息</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1024"/>
         <source>Programmer</source>
-        <translation>Програматор</translation>
+        <translation>程式燒錄器</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1050"/>
         <source>Help</source>
-        <translation>Довідка</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1117"/>
@@ -1110,7 +1108,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1174"/>
         <source>Write</source>
-        <translation>Записати</translation>
+        <translation>寫入</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1177"/>
@@ -1125,7 +1123,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1198"/>
         <source>Undo</source>
-        <translation>Назад</translation>
+        <translation>復原</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1201"/>
@@ -1135,7 +1133,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1210"/>
         <source>Redo</source>
-        <translation>Повторення</translation>
+        <translation>重做</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1213"/>
@@ -1145,27 +1143,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1323"/>
         <source>Import from Intel HEX</source>
-        <translation>Імпорт з Intel HEX</translation>
+        <translation>從 Intel HEX 匯入</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1332"/>
         <source>Export to Intel HEX</source>
-        <translation>Експорт до Intel HEX</translation>
+        <translation>匯出為 Intel HEX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1341"/>
         <source>Extract from ASUS CAP</source>
-        <translation>Витягти зASUS CAP</translation>
+        <translation>從 ASUS CAP 提取</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1350"/>
         <source>Goto address</source>
-        <translation>Перейти до адреси</translation>
+        <translation>前往位址</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1353"/>
         <source>Move the cursor to the entered address</source>
-        <translation>Підведіть курсор до введеної адреси</translation>
+        <translation>將游標移至輸入的位址</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1356"/>
@@ -1175,7 +1173,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1365"/>
         <source>Security registers</source>
-        <translation>Реєстри безпеки</translation>
+        <translation>安全暫存器</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1368"/>
@@ -1185,12 +1183,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1377"/>
         <source>Fill test image</source>
-        <translation>Заповнити тест-масивом</translation>
+        <translation>填充測試映像</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1380"/>
         <source>Filling the hex editor with a test array</source>
-        <translation>Заповнення шістнадцяткового редактора тестовим масивом</translation>
+        <translation>用測試陣列填充十六進位編輯器</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1383"/>
@@ -1200,12 +1198,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1392"/>
         <source>Compare files</source>
-        <translation>Порівняти файли</translation>
+        <translation>比較檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1395"/>
         <source>Compares the results of the last and penultimate chip read or file open operation</source>
-        <translation>Порівнює результати останнього та передостаннього зчитування мікросхеми або відкриття файлу</translation>
+        <translation>比較最後一次和倒數第二次晶片讀取或檔案開啟操作的結果</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1398"/>
@@ -1215,17 +1213,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1222"/>
         <source>Save Part</source>
-        <translation>Зберегти частину</translation>
+        <translation>部分儲存</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1234"/>
         <source>Load Part</source>
-        <translation>Завантажити частину</translation>
+        <translation>部分載入</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1246"/>
         <source>Find / Replace</source>
-        <translation>Пошук/заміна</translation>
+        <translation>尋找/取代</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1249"/>
@@ -1235,12 +1233,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1254"/>
         <source>About</source>
-        <translation>Про програму</translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1257"/>
         <source>About IMSProgrammer</source>
-        <translation>Про програму IMSProg</translation>
+        <translation>關於 IMSProg</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1260"/>
@@ -1250,7 +1248,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1269"/>
         <source>Checksum calculate</source>
-        <translation>Перерахунок CRC32</translation>
+        <translation>計算校驗和</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1272"/>
@@ -1260,7 +1258,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1281"/>
         <source>Edit chips Database</source>
-        <translation>Редактор бази мікросхем</translation>
+        <translation>編輯晶片資料庫</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1284"/>
@@ -1271,12 +1269,12 @@
         <location filename="../mainwindow.ui" line="1293"/>
         <location filename="../mainwindow.cpp" line="1795"/>
         <source>Stop</source>
-        <translation>Стоп</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1296"/>
         <source>Forced stop of read, write, erase and verification operations</source>
-        <translation>Примусова зупинка операцій читання, запису, стирання та перевірки</translation>
+        <translation>強制停止讀取、寫入、清除和驗證操作</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1299"/>
@@ -1286,12 +1284,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1308"/>
         <source>Chip info</source>
-        <translation>Інформ. о МС</translation>
+        <translation>晶片資訊</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1311"/>
         <source>Information about SFDP and status registers</source>
-        <translation>Інформація про SFDP області та регістри статусу</translation>
+        <translation>有關 SFDP 和狀態暫存器的資訊</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1314"/>
@@ -1305,27 +1303,27 @@
         <location filename="../mainwindow.cpp" line="2053"/>
         <location filename="../mainwindow.cpp" line="2129"/>
         <source>Current file: </source>
-        <translation>Поточний файл: </translation>
+        <translation>目前檔案： </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="83"/>
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>類型</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="127"/>
         <source>Manufacture</source>
-        <translation>Виробник</translation>
+        <translation>製造商</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="209"/>
         <source>Size</source>
-        <translation>Об `єм</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1856"/>
         <source>Opening DAT file</source>
-        <translation>Відкривається файл бази</translation>
+        <translation>開啟 DAT 檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="215"/>
@@ -1371,32 +1369,27 @@
         <location filename="../mainwindow.cpp" line="2193"/>
         <location filename="../mainwindow.cpp" line="2213"/>
         <source>Error</source>
-        <translation>Помилка</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="1357"/>
-        <source>The end address must be greater than the starting address.</source>
-        <translation>Кінцева адреса більша за початкову.</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1695"/>
         <source>File &apos;IMSProg_editor&apos; not found!</source>
-        <translation>Не знайдено файл &apos;IMSProg_editor&apos;!</translation>
+        <translation>找不到檔案 `IMSProg_editor`！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1865"/>
         <source>Error loading chip database file!</source>
-        <translation>Помилка завантаження файлу бази мікросхем!</translation>
+        <translation>載入晶片資料庫檔案時發生錯誤！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1871"/>
         <source>Parsing DAT file</source>
-        <translation>Обробка файлу даних</translation>
+        <translation>解析 DAT 檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="226"/>
         <source>Reading data from </source>
-        <translation>Зчитується МС </translation>
+        <translation>讀取資料來源 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="215"/>
@@ -1406,7 +1399,7 @@
         <location filename="../mainwindow.cpp" line="1212"/>
         <location filename="../mainwindow.cpp" line="1263"/>
         <source>Unsupported chip type!</source>
-        <translation>Невідомий тип мікросхеми!</translation>
+        <translation>不支援的晶片類型！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
@@ -1418,53 +1411,53 @@
         <location filename="../mainwindow.cpp" line="1272"/>
         <location filename="../mainwindow.cpp" line="1328"/>
         <source>Programmer CH341a is not connected!</source>
-        <translation>Програматор CH341a не підключений!</translation>
+        <translation>CH341A 程式燒錄器未連接！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <location filename="../mainwindow.cpp" line="1278"/>
         <source>Error reading block </source>
-        <translation>Помилка читання блоку </translation>
+        <translation>讀取區塊時發生錯誤 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="301"/>
         <location filename="../mainwindow.cpp" line="1042"/>
         <location filename="../mainwindow.cpp" line="1313"/>
         <source>Before reading from chip please press &apos;Detect&apos; button.</source>
-        <translation>Перед зчитуванням натисніть кнопку &apos;Пошук&apos;.</translation>
+        <translation>讀取晶片資料前，請按下 &apos;偵測&apos; 按鈕。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>Please select the chip parameters - manufacture and chip name</source>
-        <translation>Виберіть параметри мікросхеми - &apos;Див.&apos; та &apos;Назва&apos;</translation>
+        <translation>請選擇晶片參數 - &apos;製造商&apos; 和晶片 &apos;名稱&apos;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>The chip is not connect or missing!</source>
-        <translation>Мікросхема не встановлена ​​чи пошкоджена!</translation>
+        <translation>晶片未連接或遺失！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="604"/>
         <location filename="../mainwindow.cpp" line="2044"/>
         <source>Saving file</source>
-        <translation>Зберігається файл</translation>
+        <translation>儲存檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="606"/>
         <location filename="../mainwindow.cpp" line="2046"/>
         <source>Save file</source>
-        <translation>Зберегти файл</translation>
+        <translation>儲存檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="617"/>
         <location filename="../mainwindow.cpp" line="1381"/>
         <source>Error saving file!</source>
-        <translation>Помилка збереження файлу!</translation>
+        <translation>儲存檔案時發生錯誤！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="637"/>
         <source>Erasing the </source>
-        <translation>Стирається МС </translation>
+        <translation>正在清除 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="653"/>
@@ -1472,142 +1465,159 @@
         <location filename="../mainwindow.cpp" line="748"/>
         <location filename="../mainwindow.cpp" line="784"/>
         <source>Error erasing sector </source>
-        <translation>Помилка стирання сектора </translation>
+        <translation>清除磁區時發生錯誤 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="824"/>
         <location filename="../mainwindow.cpp" line="874"/>
         <location filename="../mainwindow.cpp" line="2115"/>
         <source>Opening file</source>
-        <translation>Відкривається файл</translation>
+        <translation>開啟檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="830"/>
         <location filename="../mainwindow.cpp" line="878"/>
         <location filename="../mainwindow.cpp" line="2119"/>
         <source>Open file</source>
-        <translation>Відкрити файл</translation>
+        <translation>開啟檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="846"/>
         <location filename="../mainwindow.cpp" line="886"/>
         <source>The file size exceeds the chip size. Please select another chip or file or use `Save part` to split the file.</source>
-        <translation>Розмір файлу перевищує розмір мікросхеми. Будь ласка, виберіть іншу мікросхему або файл, або скористайтеся `Зберегти частину` для розділення файлу.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="2018"/>
-        <source>Before working with the security registers, click the &apos;Detect&apos; button</source>
-        <translation>Перед початком роботи з реєстрами безпеки натисніть кнопку &apos;Пошук&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="2030"/>
-        <source>There are no security registers in this chip or the current version of IMSProg does not support this algorithm.</source>
-        <translation>У цій мікросхемі немає регістрів безпеки або поточна версія IMSProg не підтримує цей алгоритм.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="2143"/>
-        <source>Not valid HEX format!</source>
-        <translation>Неправильний формат HEX!</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="2175"/>
-        <source>The address is larger than the size of the chip!</source>
-        <translation>Адреса більша за розмір чіпа!</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="2193"/>
-        <location filename="../mainwindow.cpp" line="2213"/>
-        <source>Checksum error!</source>
-        <translation>Помилка контрольної суми!</translation>
+        <translation>檔案大小超過晶片容量。請選擇其他晶片或檔案，或使用「部分儲存」分割檔案。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="964"/>
         <source>Writing data to </source>
-        <translation>Запис даних у </translation>
+        <translation>正在寫入資料至 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1021"/>
         <source>Error writing sector </source>
-        <translation>Помилка запису сектора </translation>
+        <translation>寫入磁區時發生錯誤 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1228"/>
         <source>Veryfing data from </source>
-        <translation>Перевіряються дані МС </translation>
+        <translation>正在驗證資料來源 </translation>
+    </message>
+    <message>
+        <source>Error comparing data!
+    Address:   </source>
+        <translation type="vanished">比對資料時發生錯誤！
+    位址：   </translation>
+    </message>
+    <message>
+        <source>
+    Buffer: </source>
+        <translation type="vanished">
+    緩衝區： </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="1289"/>
+        <source>    Chip: </source>
+        <translation>    晶片： </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1289"/>
         <source>Error comparing data!
 Address:   </source>
-        <translation>Помилка порівняння даних!
-Адреса:   </translation>
+        <translation>比較資料時出錯！
+地址：   </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1289"/>
         <source>
 Buffer: </source>
         <translation>
-Буфер: </translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="1289"/>
-        <source>    Chip: </source>
-        <translation>    Мікросхема: </translation>
+緩衝： </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1314"/>
         <source>Please select the chip parameters - manufacture and chip name.</source>
-        <translation>Виберіть параметри МС - &apos;Проізв.&apos; та &apos;Назва&apos;.</translation>
+        <translation>請選擇晶片參數 - &apos;製造商&apos; 和晶片 &apos;名稱&apos;。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1323"/>
         <source>Ok!</source>
-        <translation>Ok!</translation>
+        <translation>確定！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1323"/>
         <source>The operation was successful!</source>
-        <translation>Операцію успішно виконано!</translation>
+        <translation>操作成功！</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="1357"/>
+        <source>The end address must be greater than the starting address.</source>
+        <translation>結束位址必須大於起始位址。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1369"/>
         <source>Saving block</source>
-        <translation>Зберігається блок</translation>
+        <translation>儲存區塊</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1371"/>
         <source>Save block</source>
-        <translation>Зберегти блок</translation>
+        <translation>儲存區塊</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1396"/>
         <source>Opening block</source>
-        <translation>Відкривається блок</translation>
+        <translation>開啟區塊</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1398"/>
         <source>Open block</source>
-        <translation>Відкрити блок</translation>
+        <translation>開啟區塊</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1415"/>
         <source>The end address out of image size!</source>
-        <translation>Кінцева адреса більша за розмір буфера!</translation>
+        <translation>結束位址超出映像檔大小！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1453"/>
         <source>Connected</source>
-        <translation>Підключено</translation>
+        <translation>已連接</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1458"/>
         <source>Not connected</source>
-        <translation>Не підключений</translation>
+        <translation>未連接</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="2018"/>
+        <source>Before working with the security registers, click the &apos;Detect&apos; button</source>
+        <translation>在使用安全暫存器之前，請點擊 &apos;偵測&apos;按鈕</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="2030"/>
+        <source>There are no security registers in this chip or the current version of IMSProg does not support this algorithm.</source>
+        <translation>此晶片沒有安全暫存器，或目前版本的 IMSProg 不支援此演算法。</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="2143"/>
+        <source>Not valid HEX format!</source>
+        <translation>無效的 HEX 格式！</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="2175"/>
+        <source>The address is larger than the size of the chip!</source>
+        <translation>位址大於晶片容量！</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="2193"/>
+        <location filename="../mainwindow.cpp" line="2213"/>
+        <source>Checksum error!</source>
+        <translation>校驗和錯誤！</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1795"/>
         <source>Operation aborted!</source>
-        <translation>Операцію перервано!</translation>
+        <translation>操作已中止！</translation>
     </message>
 </context>
 <context>
@@ -1615,12 +1625,12 @@ Buffer: </source>
     <message>
         <location filename="../searchdialog.ui" line="14"/>
         <source>QHexEdit - Find/Replace</source>
-        <translation>HEX-редактор - поиск/замена</translation>
+        <translation>QHexEdit - 尋找/取代</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="26"/>
         <source>Find</source>
-        <translation>Найти</translation>
+        <translation>尋找</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="33"/>
@@ -1637,27 +1647,27 @@ Buffer: </source>
     <message>
         <location filename="../searchdialog.ui" line="71"/>
         <source>Replace</source>
-        <translation>Заменить</translation>
+        <translation>取代</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="116"/>
         <source>Options</source>
-        <translation>Опції</translation>
+        <translation>選項:</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="122"/>
         <source>&amp;Backwards</source>
-        <translation>&amp;Пошук назад</translation>
+        <translation>向後(&amp;B)</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="129"/>
         <source>&amp;Prompt on replace</source>
-        <translation>&amp;Підказка під час заміни</translation>
+        <translation>取代時提示(&amp;P)</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="150"/>
         <source>Standard headers:</source>
-        <translation>Стандартні заголовки:</translation>
+        <translation>標準標頭：</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="191"/>
@@ -1702,7 +1712,7 @@ Buffer: </source>
     <message>
         <location filename="../searchdialog.ui" line="385"/>
         <source>&amp;Find</source>
-        <translation>&amp;Знайти</translation>
+        <translation>尋找(&amp;F)</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="388"/>
@@ -1712,17 +1722,17 @@ Buffer: </source>
     <message>
         <location filename="../searchdialog.ui" line="413"/>
         <source>&amp;Replace</source>
-        <translation>&amp;Замінити</translation>
+        <translation>取代(&amp;R)</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="435"/>
         <source>Replace &amp;All</source>
-        <translation>Замінити &amp;Все</translation>
+        <translation>全部取代(&amp;A)</translation>
     </message>
     <message>
         <location filename="../searchdialog.ui" line="457"/>
         <source>&amp;Close</source>
-        <translation>&amp;Закрити</translation>
+        <translation>關閉(&amp;C)</translation>
     </message>
     <message>
         <location filename="../searchdialog.cpp" line="87"/>
@@ -1733,12 +1743,12 @@ Buffer: </source>
     <message>
         <location filename="../searchdialog.cpp" line="87"/>
         <source>%1 occurrences replaced.</source>
-        <translation>Замінено %1 входжень.</translation>
+        <translation>已取代 %1 個項目。</translation>
     </message>
     <message>
         <location filename="../searchdialog.cpp" line="114"/>
         <source>Replace occurrence?</source>
-        <translation>Замінити появу?</translation>
+        <translation>要取代此項目嗎？</translation>
     </message>
 </context>
 <context>
@@ -1746,17 +1756,17 @@ Buffer: </source>
     <message>
         <location filename="../commands.cpp" line="133"/>
         <source>Inserting %1 bytes</source>
-        <translation>Вставка %1 байт</translation>
+        <translation>插入 %1 位元組</translation>
     </message>
     <message>
         <location filename="../commands.cpp" line="155"/>
         <source>Delete %1 chars</source>
-        <translation>Видалити %1 символів</translation>
+        <translation>刪除 %1 個字元</translation>
     </message>
     <message>
         <location filename="../commands.cpp" line="180"/>
         <source>Overwrite %1 chars</source>
-        <translation>Перезаписати %1 символів</translation>
+        <translation>覆寫 %1 個字元</translation>
     </message>
 </context>
 </TS>

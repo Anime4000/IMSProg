@@ -73,6 +73,7 @@ set(TS_FILES
     language/chipProgrammer_de_DE.ts
     language/chipProgrammer_es_ES.ts
     language/chipProgrammer_zh_CN.ts
+    language/chipProgrammer_zh_TW.ts
     language/chipProgrammer_uk_UA.ts
     language/chipProgrammer_hu_HU.ts
     language/chipProgrammer_pt_BR.ts
@@ -92,7 +93,9 @@ commands.cpp
 dialogsp.cpp
 dialogrp.cpp
 dialogsfdp.cpp
+dialognandsr.cpp
 dialogsecurity.cpp
+dialogcompare.cpp
 dialogsr.cpp
 dialogsetaddr.cpp
 hexutility.cpp
@@ -121,6 +124,8 @@ dialogsp.h
 dialogrp.h
 dialogsfdp.h
 dialogsecurity.h
+dialognandsr.h
+dialogcompare.h
 dialogsr.h
 dialoginfo.h
 dialogsetaddr.h
@@ -147,7 +152,9 @@ mainwindow.ui
 dialogsp.ui
 dialogrp.ui
 dialogsfdp.ui
+dialognandsr.ui
 dialogsecurity.ui
+dialogcompare.ui
 dialogsr.ui
 dialogsetaddr.ui
 dialoginfo.ui

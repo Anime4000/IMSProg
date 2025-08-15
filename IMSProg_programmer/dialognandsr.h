@@ -12,44 +12,47 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#ifndef DIALOGSFDP_H
-#define DIALOGSFDP_H
+#ifndef DIALOGNANDSR_H
+#define DIALOGNANDSR_H
 
 #include <QDialog>
 #include <QMessageBox>
-#include "hexutility.h"
 extern "C" {
 #include "ch341a_spi.h"
 #include "spi_controller.h"
 }
+
 namespace Ui {
-class DialogSFDP;
+class DialogNANDSr;
 }
 
-class DialogSFDP : public QDialog
+class DialogNANDSr : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit DialogSFDP(QWidget *parent = nullptr);
-    ~DialogSFDP();
+    explicit DialogNANDSr(QWidget *parent = nullptr);
+    ~DialogNANDSr();
+    void setPattern(const uint pattern);
     void closeEvent(QCloseEvent* event);
-
-private slots:
-    void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
-    void on_pushButton_3_clicked();
-    void setRegStatus(uint8_t regNumber, bool state);
-    void printRegData(uint8_t regNumber, uint8_t regData);
 
 signals:
     void closeRequestHasArrived();
 
+private slots:
+    void on_pushButton_read_clicked();
+
+    void on_pushButton_write_clicked();
+
 private:
-    Ui::DialogSFDP *ui;
+    Ui::DialogNANDSr *ui;
     void setLineEditFilter();
-    void legendPrint(QString basic, QString extended, QString manufacture);
-    int numOfRegisters;
+    void allRegEnabled();
+    void setRegDisabled(uint8_t regNumber);
+    void clearAllFields();
+    void setRegLabels(uint8_t regNumber, QString lt);
+    uint8_t RegNumbers[5];
+    bool regReaded;
 };
 
-#endif // DIALOGSFDP_H
+#endif // DIALOGNANDSR_H

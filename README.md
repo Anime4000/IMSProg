@@ -269,7 +269,10 @@ modify buffer data.
 It contains the following controls: ![Undo](img/undo.png) undo, 
 ![Redo](img/redo64.png) redo, and the ![Search](img/hexsearch64.png) 
 search/replace. The `[Ctrl+A]` key used to update the CRC24 checksum. The 
-`[Ctrl+G]` key used to to move the cursor to the entered address.
+`[Ctrl+G]` key used to move the cursor to the entered address. The `[Ctrl+L]` 
+key is used to fill the hex editor buffer with a special test array. The `[Ctrl+M]` key used for compares the results of the last and penultimate chip read or file open operation.
+
+![compare](img/compare_files_en.png)
 
 ### List of hotkeys:
 
@@ -283,6 +286,8 @@ search/replace. The `[Ctrl+A]` key used to update the CRC24 checksum. The
 | Ctrl+G | Goto address (Hex editor)                     |
 | Chrl+H | About IMSProg                                 |
 | Ctrl+I | Force stop chip operation                     |
+| Ctrl+L | Fill the test array (Hex editor)              |
+| Ctrl+M | Compare files (Hex editor)                    |
 | Ctrl+O | Open file                                     |
 | Ctrl+P | Chip info (SFDP + status registers)           |
 | Ctrl+Q | Edit chip database                            |
@@ -341,7 +346,7 @@ page in both .Dat and .csv formats.
 ## Chip updater
 
  IMSProg_database_update uses the zenity graphical Gnome utility.  Once started, 
- it copies the downloaded database to the ~/.local/imsprog folder. The script 
+ it copies the downloaded database to the ~/.local/share/imsprog folder. The script 
  then displays the number of of chips in the database before and after the 
  upgrade.
 
@@ -562,9 +567,9 @@ UC25IQ128
 
 The latest version of the chip database can be found 
 [here](https://antenna-dvb-t2.ru/dl_all/IMSProg.Dat).
-You can download it and copy it to the ~/.local/imsprog folder:
+You can download it and copy it to the ~/.local/share/imsprog folder:
 
-`cp IMSProg.Dat ~/.local/imsprog`
+`cp IMSProg.Dat ~/.local/share/imsprog`
 
 [![Watch the video](img/IMSProg_1_0_24.mp4)](img/IMSProg_1_0_24.mp4)
 
@@ -736,6 +741,7 @@ are [GPL-2+](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) and from
 - Ukrainian translation by [Sergey Golovko](https://github.com/cappelikan)
 - Chinese translation by [Tian-HP](https://github.com/Tian-HP)
 - German translation by [wucke13](https://github.com/wucke13)
+- Traditional Chinese translation by [ystartgo](https://github.com/ystartgo)
 
 Anyone can add or improve a translation by making a pull request.
 Translations files are located in: [IMSProg_programmer/language/](https://github.com/bigbigmdm/IMSProg/tree/main/IMSProg_programmer/language) and [IMSProg_editor/language/](https://github.com/bigbigmdm/IMSProg/tree/main/IMSProg_editor/language)

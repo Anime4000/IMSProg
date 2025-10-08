@@ -21,11 +21,15 @@
 #include <QDragEnterEvent>
 #include <QtGui>
 #include <QFileInfo>
+#include <QInputMethod>
+#include <QKeyEvent>
+#include <QInputMethod>
 #include "qhexedit.h"
 #include "dialogsp.h"
 #include "dialogrp.h"
 #include "dialogsetaddr.h"
 #include "dialogsecurity.h"
+#include "dialognandsecurity.h"
 #include "dialognandsr.h"
 #include "hexutility.h"
 #include <stddef.h>
@@ -1430,7 +1434,7 @@ void MainWindow::receiveAddr2(QString addressData)
 
 void MainWindow::on_actionSave_Part_triggered()
 {
-    DialogSP* savePartDialog = new DialogSP();
+    DialogSP* savePartDialog = new DialogSP(this);
     savePartDialog->show();
 
     connect(savePartDialog, SIGNAL(sendAddr(QString)), this, SLOT(receiveAddr(QString)));
@@ -1438,7 +1442,7 @@ void MainWindow::on_actionSave_Part_triggered()
 
 void MainWindow::on_actionLoad_Part_triggered()
 {
-    DialogRP* loadPartDialog = new DialogRP();
+    DialogRP* loadPartDialog = new DialogRP(this);
     loadPartDialog->show();
 
     connect(loadPartDialog, SIGNAL(sendAddr2(QString)), this, SLOT(receiveAddr2(QString)));
@@ -1633,7 +1637,7 @@ void MainWindow::on_comboBox_type_currentIndexChanged(int index)
          ui->comboBox_ECC->show();
          ui->actionDetect->setEnabled(true);
          ui->actionChip_info->setEnabled(true);
-         //ui->actionSecurity_registers->setEnabled(true);
+         ui->actionSecurity_registers->setEnabled(true);
      }
      if (index != 6)
      {
@@ -1662,7 +1666,7 @@ void MainWindow::on_comboBox_ECC_currentIndexChanged(int index)
 
 void MainWindow::on_actionAbout_triggered()
 {
-    DialogAbout* aboutDialog = new DialogAbout();
+    DialogAbout* aboutDialog = new DialogAbout(this);
     aboutDialog->show();
 }
 
@@ -1773,7 +1777,7 @@ void MainWindow::doNotDisturbCancel()
       ui->actionGoto_address->setDisabled(false);
       ui->actionCompare_files->setDisabled(false);
       if ((currentChipType == 0) || (currentChipType == 6) || (currentChipType > 2)) ui->actionChip_info->setDisabled(false);
-      if (currentChipType == 0) ui->actionSecurity_registers->setDisabled(false);
+      if ((currentChipType == 0) || (currentChipType == 6)) ui->actionSecurity_registers->setDisabled(false);
       ui->actionStop->setDisabled(true);
 
       ui->pushButton->blockSignals(false);
@@ -1814,7 +1818,7 @@ void MainWindow::on_actionStop_triggered()
 void MainWindow::on_pushButton_4_clicked()
 {
     //info form showing
-    DialogInfo* infoDialog = new DialogInfo();
+    DialogInfo* infoDialog = new DialogInfo(this);
     infoDialog->show();
     if ((currentChipType == 0) && (ui->comboBox_vcc->currentIndex() == 1)) infoDialog->setChip(2); //NOR_FLASH 1.8
     if ((currentChipType == 0) && (ui->comboBox_vcc->currentIndex() == 2)) infoDialog->setChip(3); //NOR FLASH 3.3
@@ -1832,14 +1836,14 @@ void MainWindow::on_actionChip_info_triggered()
      timer->stop();
      if (currentChipType == 0)
      {
-        DialogSFDP* sfdpDialog = new DialogSFDP();
+        DialogSFDP* sfdpDialog = new DialogSFDP(this);
         connect(sfdpDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSFDP()));
         sfdpDialog->show();
      }
 
      if (currentChipType == 6)
      {
-         DialogNANDSr* nandSRDialog = new DialogNANDSr();
+         DialogNANDSr* nandSRDialog = new DialogNANDSr(this);
          connect(nandSRDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSR()));
          nandSRDialog->show();
          nandSRDialog->setPattern(currentAlgorithm);
@@ -1847,7 +1851,7 @@ void MainWindow::on_actionChip_info_triggered()
 
      if ((currentChipType > 2) && (currentChipType != 6))
      {
-         DialogSR* srDialog = new DialogSR();
+         DialogSR* srDialog = new DialogSR(this);
          connect(srDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSR()));
          srDialog->show();
          srDialog->setChipType(currentChipType);
@@ -2012,7 +2016,7 @@ void MainWindow::closeSR()
 void MainWindow::on_actionGoto_address_triggered()
 {
     //HExEditor --> goto address
-    DialogSetAddr* gotoAddrDialog = new DialogSetAddr();
+    DialogSetAddr* gotoAddrDialog = new DialogSetAddr(this);
     gotoAddrDialog->show();
     connect(gotoAddrDialog, SIGNAL(sendAddr3(qint64)), this, SLOT(receiveAddr3(qint64)));
 
@@ -2031,17 +2035,30 @@ void MainWindow::on_actionSecurity_registers_triggered()
         QMessageBox::about(this, tr("Error"), tr("Before working with the security registers, click the 'Detect' button"));
         return;
     }
-    if (currentAlgorithm > 0)
+    if (currentChipType == 0)
     {
-        timer->stop();
-        DialogSecurity* securityDialog = new DialogSecurity();
-        connect(securityDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSR()));
-        securityDialog->setAlgorithm(currentAlgorithm);
-        securityDialog->setPath(lastDirectory);
-        securityDialog->show();
+        if (currentAlgorithm > 0)
+        {
+            timer->stop();
+            DialogSecurity* securityDialog = new DialogSecurity(this);
+            connect(securityDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSR()));
+            securityDialog->setAlgorithm(currentAlgorithm);
+            securityDialog->setPath(lastDirectory);
+            securityDialog->show();
+        }
+        else QMessageBox::about(this, tr("Error"), tr("There are no security registers in this chip or the current version of IMSProg does not support this algorithm."));
     }
-    else QMessageBox::about(this, tr("Error"), tr("There are no security registers in this chip or the current version of IMSProg does not support this algorithm."));
+    if (currentChipType == 6)
+    {
 
+            DialogNandSecurity* securityNandDialog = new DialogNandSecurity(this);
+            connect(securityNandDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeSR()));
+            securityNandDialog->setAlgorithm(currentAlgorithm);
+            securityNandDialog->setSectorSize(currentPageSize);
+            qDebug()<<"Main:"<<currentPageSize<<" "<< currentAlgorithm;
+            securityNandDialog->setPath(lastDirectory);
+            securityNandDialog->show();
+    }
 }
 
 void MainWindow::on_actionExport_to_Intel_HEX_triggered()
@@ -2239,19 +2256,22 @@ void MainWindow::on_actionImport_from_Intel_HEX_triggered()
 
 void MainWindow::on_actionFill_test_image_triggered()
 {
-    int fileSize, addrSize, txtSize, i, j, curPos, hiDigit;
+    int addrSize, txtSize, i, j, divider;
+    uint64_t curPos, fileSize, jj, hiDigit;
     char k;
-    fileSize = chipData.size();
+    fileSize = static_cast<uint64_t>(chipData.size());
+    if (fileSize > 512) divider = 9;
+    else divider = 0;
     ui->progressBar->setValue(0);
-    ui->progressBar->setRange(0, fileSize);
+    ui->progressBar->setRange(0, (static_cast<int>(fileSize >> divider)));
     addrSize = 0;
-    j = fileSize;
+    jj = fileSize;
     hiDigit = 1;
-    while (j > 1)
+    while (jj > 1)
     {
-        j = j / 16;
+        jj = jj >> 4;
         addrSize ++;
-        hiDigit = hiDigit * 16;
+        hiDigit = hiDigit << 4;
     }
     char digits[16];
     txtSize = 16 - addrSize - 4;
@@ -2260,18 +2280,17 @@ void MainWindow::on_actionFill_test_image_triggered()
            k = 0x40;
            while (curPos < fileSize)
            {
-               //String
+              //String
               chipData.append('<');
               chipData.append('0');
               chipData.append('x');
 
-
               //calculate digits
-              i = hiDigit / 16;
-              for (j=addrSize - 1; j>=0; j--)
+              i = static_cast<int>(hiDigit >> 4);
+              for (j=addrSize - 1; j >= 0; j--)
               {
-                  digits[j] = (curPos / i) % 16;
-                  i = i / 16;
+                  digits[j] = (curPos / static_cast<uint64_t>(i)) % 16;
+                  i = i >> 4;
               }
               for (j = addrSize -1; j >=0; j--)
               {
@@ -2279,7 +2298,6 @@ void MainWindow::on_actionFill_test_image_triggered()
                  else digits[j] = digits[j] + 0x37;
                  chipData.append(digits[j]);
               }
-
               chipData.append('>');
               for (i = 0; i < txtSize; i++)
               {
@@ -2288,7 +2306,7 @@ void MainWindow::on_actionFill_test_image_triggered()
                   if (k > 0x7e) k = 0x40;
               }
               curPos = curPos + 16;
-              if (curPos % 512 == 0) ui->progressBar->setValue(curPos);
+              if (curPos % 512 == 0) ui->progressBar->setValue(static_cast<int>(curPos >> divider));
            }
     hexEdit->setData(chipData);
     ui->crcEdit->setText(getCRC32(chipData));
@@ -2297,14 +2315,14 @@ void MainWindow::on_actionFill_test_image_triggered()
 
 void MainWindow::on_actionCompare_files_triggered()
 {
-    DialogCompare* compDialog = new DialogCompare();
+    DialogCompare* compDialog = new DialogCompare(this);
     compDialog->show();
     compDialog->showArrays(&chipData, &oldChipData, &newFileName, &oldFileName);
 }
 
 void MainWindow::preparingToCompare(bool type)
 {
-    //For comparing function
+    // For comparing function
     // type = 0 - file reading
     // type = 1 - chip reading
     if (filled == 0) oldChipData = hexEdit->data();
@@ -2322,3 +2340,21 @@ void MainWindow::preparingToCompare(bool type)
     }
 }
 
+
+void MainWindow::on_actionCopy_triggered()
+{
+        QKeyEvent* keyPress = new QKeyEvent(QEvent::KeyPress, Qt::Key_C, Qt::ControlModifier, "C");
+        QKeyEvent* keyRelease = new QKeyEvent(QEvent::KeyRelease, Qt::Key_C, Qt::ControlModifier, "C");
+
+        QCoreApplication::postEvent(hexEdit, keyPress);
+        QCoreApplication::postEvent(hexEdit, keyRelease);
+}
+
+void MainWindow::on_actionPaste_triggered()
+{
+        QKeyEvent* keyPress = new QKeyEvent(QEvent::KeyPress, Qt::Key_V, Qt::ControlModifier, "V");
+        QKeyEvent* keyRelease = new QKeyEvent(QEvent::KeyRelease, Qt::Key_V, Qt::ControlModifier, "V");
+
+        QCoreApplication::postEvent(hexEdit, keyPress);
+        QCoreApplication::postEvent(hexEdit, keyRelease);
+}

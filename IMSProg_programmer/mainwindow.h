@@ -21,6 +21,8 @@
 #include <QFileDialog>
 #include <QTime>
 #include <QTimer>
+#include <QSettings>
+#include <QResizeEvent>
 #include <unistd.h>
 #include "qhexedit.h"
 #include "dialogsp.h"
@@ -46,7 +48,6 @@ extern "C" {
 #include "spi_controller.h"
 #include "spi_eeprom.h"
 #include "spi_eeprom_api.h"
-#include "spi_nand_flash.h"
 #include "timer.h"
 #include "types.h"
 }
@@ -71,6 +72,8 @@ public slots:
     void receiveAddr3(qint64);
     void closeSFDP();
     void closeSR();
+    void closeNandSR();
+    void receiveNandStatus(uint8_t);
 
 private slots:
     void progInit();
@@ -116,12 +119,15 @@ private slots:
     void preparingToCompare(bool type);
     void on_actionCompare_files_triggered();
     void on_comboBox_ECC_currentIndexChanged(int index);
-
     void on_actionCopy_triggered();
-
     void on_actionPaste_triggered();
+    void on_actionBad_block_management_triggered();
+    void on_actionCH341A_B_v1_2_triggered();
+    void on_actionCH341A_v1_7_triggered();
+    void closeEvent(QCloseEvent *event);
+    void showEvent(QShowEvent* event);
 
-private:
+    private:
     Ui::MainWindow *ui;
     QString grnKeyStyle, redKeyStyle;
     QString lastDirectory;
@@ -160,6 +166,14 @@ private:
     void ch341StatusFlashing();
     QByteArray block;
     uint32_t blockStartAddr, blockLen;
+    uint8_t nandSettings;
+    uint8_t current_programmer;
+    struct programmers {
+        uint8_t progID;
+        uint8_t progType;
+        QString progFullName;
+        QString progDownName;
+    };
 };
 
 #endif // MAINWINDOW_H

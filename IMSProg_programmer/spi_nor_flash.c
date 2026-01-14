@@ -1069,6 +1069,34 @@ int nand_page_write(unsigned char *buf, unsigned int page_size, uint32_t sector_
     return retval;
 }
 
+int nand_block_read(unsigned char *buf, unsigned int page_size, uint32_t block_number, unsigned int pages_per_block)
+{
+    int retval;
+    unsigned int i;
+    uint32_t secNumber;
+    for (i = 0; i < pages_per_block; i++)
+    {
+        secNumber = block_number * pages_per_block + i;
+        retval = nand_page_read(&buf[i * page_size], page_size, secNumber);
+        if (retval == -1) return retval;
+    }
+    return 0;
+}
+
+int nand_block_write(unsigned char *buf, unsigned int page_size, uint32_t block_number, unsigned int pages_per_block)
+{
+    int retval;
+    unsigned int i;
+    uint32_t secNumber;
+    for (i = 0; i < pages_per_block; i++)
+    {
+        secNumber = block_number * pages_per_block + i;
+        retval = nand_page_write(&buf[i * page_size], page_size, secNumber);
+        if (retval == -1) return retval;
+    }
+    return 0;
+}
+
 void nand_unprotect(void)
 {
     nand_write_enable();
@@ -1103,4 +1131,33 @@ void nand_ECCEnable(void)
     SPI_CONTROLLER_Write_One_Byte(val | 0x10);  //set to 1 byte 4
     SPI_CONTROLLER_Chip_Select_High();
     usleep(2);
+}
+
+int nand_checkBadBlock(uint32_t blockNo, uint32_t sectSize, uint32_t blockPerSector)
+{
+    int retval; // Return: -1 - error operation, 0 - good block, 1 - bad block
+    unsigned char buf[2];
+    uint32_t sectNo;
+    sectNo = blockNo * blockPerSector;
+    nand_wait_ready(950);
+    SPI_CONTROLLER_Chip_Select_Low();
+    SPI_CONTROLLER_Write_One_Byte(0x13);
+    SPI_CONTROLLER_Write_One_Byte((0xff0000 & sectNo) >> 16);
+    SPI_CONTROLLER_Write_One_Byte((0x00ff00 & sectNo) >> 8);
+    SPI_CONTROLLER_Write_One_Byte(0x0000ff & sectNo);
+    SPI_CONTROLLER_Chip_Select_High();
+    //usleep(1000);
+    nand_wait_ready(950);
+    SPI_CONTROLLER_Chip_Select_Low();
+    SPI_CONTROLLER_Write_One_Byte(0x03);
+//    SPI_CONTROLLER_Write_One_Byte(0x08); //high address
+//    SPI_CONTROLLER_Write_One_Byte(0x00); //low address
+    SPI_CONTROLLER_Write_One_Byte((0x00ff00 & sectSize) >> 8);; //high address
+    SPI_CONTROLLER_Write_One_Byte(0x0000ff & sectSize); //low address
+    SPI_CONTROLLER_Write_One_Byte(0x00); //dymmy byte
+    retval = SPI_CONTROLLER_Read_NByte(buf,2,SPI_CONTROLLER_SPEED_SINGLE);
+    SPI_CONTROLLER_Chip_Select_High();
+    if (retval == -1) return retval;
+    if (buf[0] == 0xff) return 0;
+    else return 1;
 }

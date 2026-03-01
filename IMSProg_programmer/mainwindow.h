@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 - 2024 Mikhail Medvedev <e-ink-reader@yandex.ru>
+ * Copyright (C) 2023 - 2026 Mikhail Medvedev <e-ink-reader@yandex.ru>
  *
  *
  * This program is free software; you can redistribute it and/or
@@ -168,12 +168,6 @@ private slots:
     uint32_t blockStartAddr, blockLen;
     uint8_t nandSettings;
     uint8_t current_programmer;
-    struct programmers {
-        uint8_t progID;
-        uint8_t progType;
-        QString progFullName;
-        QString progDownName;
-    };
 };
 
 #endif // MAINWINDOW_H

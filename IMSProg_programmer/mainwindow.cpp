@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 - 2025 Mikhail Medvedev <e-ink-reader@yandex.ru>
+ * Copyright (C) 2023 - 2026 Mikhail Medvedev <e-ink-reader@yandex.ru>
  *
  *
  * This program is free software; you can redistribute it and/or
@@ -120,11 +120,6 @@ MainWindow::MainWindow(QWidget *parent) :
  ui->comboBox_i2cSpeed->setCurrentIndex(2);
  currentI2CBusSpeed = 2;
 
- programmers programmer[] = {
-    //progID progType progFullName     progDownName
-     {0,     0,       "CH341A/B V1.2", "CH341"},
-     {1,     0,       "CH341A V1.7",   "CH341"}
- };
  current_programmer = 0;
 
  currentChipSize = 0;
@@ -166,8 +161,10 @@ MainWindow::MainWindow(QWidget *parent) :
        if (current_programmer == 1) ui->actionCH341A_v1_7->setChecked(true);
      settings.endGroup();
      settings.beginGroup("FormPosition");
-        MainWindow::move(settings.value("MWXposition").toInt(), settings.value("MWYposition").toInt());
-        MainWindow::resize(settings.value("MWWidth").toInt(), settings.value("MWHeight").toInt());
+     if (settings.contains("geometry"))
+     {
+         restoreGeometry(settings.value("geometry").toByteArray());
+     }
      settings.endGroup();
  }
  QFont heFont;
@@ -2130,7 +2127,6 @@ void MainWindow::on_actionSecurity_registers_triggered()
             connect(securityNandDialog, SIGNAL(closeRequestHasArrived()), this, SLOT(closeNandSR()));
             securityNandDialog->setAlgorithm(currentAlgorithm);
             securityNandDialog->setSectorSize(currentPageSize);
-            qDebug()<<"Main:"<<currentPageSize<<" "<< currentAlgorithm;
             securityNandDialog->setPath(lastDirectory);
             securityNandDialog->show();
     }
@@ -2468,12 +2464,6 @@ void MainWindow::on_actionCH341A_v1_7_triggered()
 void MainWindow::closeEvent(QCloseEvent( *event))
 {
     //Storing parameters in ini file
-    QSize size = this->size();
-    int w = size.width();
-    int h = size.height();
-    QPoint pos = this->pos();
-    int x = pos.x();
-    int y = pos.y();
     if (lastDirectory == NULL) lastDirectory = QDir::homePath();
     QSettings settings(QDir::homePath() + "/.local/share/imsprog/config.ini", QSettings::IniFormat);
     settings.beginGroup("Chip");
@@ -2483,12 +2473,9 @@ void MainWindow::closeEvent(QCloseEvent( *event))
     settings.setValue("ProgrammerType", current_programmer);
     settings.endGroup();
     settings.beginGroup("FormPosition");
-    settings.setValue("MWXposition", x);
-    settings.setValue("MWYposition", y);
-    settings.setValue("MWWidth", w);
-    settings.setValue("MWHeight", h);
+    settings.setValue("geometry", saveGeometry());
     settings.endGroup();
-
+    QMainWindow::closeEvent(event);
 }
 
 void MainWindow::showEvent(QShowEvent* event)
